@@ -1,4 +1,6 @@
-# Your First Machine Learning Project in Python Step-By-Step, by Jason Brownlee
+# Your First Machine Learning Project in Python Step-By-Step, by Jason Brownlee:
+# classification of iris flowers
+# https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
 
 # Check the versions of libraries
 # Python version
