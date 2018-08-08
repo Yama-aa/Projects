@@ -21,14 +21,9 @@ url = "iris.csv"
 names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
 dataset = pandas.read_csv(url, names=names)
 
-# shape
-print(dataset.shape)
-
-# head
-print(dataset.head(20))
-
-# descriptions
-print(dataset.describe())
+print(dataset.shape) # shape
+print(dataset.head(20)) # head
+print(dataset.describe()) # descriptions
 
 # class distribution
 print(dataset.groupby('class').size())
@@ -61,20 +56,14 @@ scoring = 'accuracy'
 
 # Spot Check Algorithms
 models = list()
-# Logistic Regression
-models.append(('LR', LogisticRegression()))
-# Linear Discriminant Analysis
-models.append(('LDA', LinearDiscriminantAnalysis()))
-# K-Nearest Neighbors
-models.append(('KNN', KNeighborsClassifier()))
-# Classification and Regression Trees
-models.append(('CART', DecisionTreeClassifier()))
-# Gaussian Naive Bayes
-models.append(('NB', GaussianNB()))
-# Support Vector Machines
-models.append(('SVM', SVC()))
+models.append(('LR', LogisticRegression())) # Logistic Regression
+models.append(('LDA', LinearDiscriminantAnalysis())) # Linear Discriminant Analysis
+models.append(('KNN', KNeighborsClassifier())) # K-Nearest Neighbors
+models.append(('CART', DecisionTreeClassifier())) # Classification and Regression Trees
+models.append(('NB', GaussianNB())) # Gaussian Naive Bayes
+models.append(('SVM', SVC())) # Support Vector Machines
 
-# evaluate each model in turn
+# evaluate each model
 results = []
 names = []
 for name, model in models:
