@@ -35,6 +35,6 @@ def climbing_leaderboard(scores_list, player_name):
 
 if __name__ == '__main__':
     scores = list(map(int, input("Please enter the leaderboard scores: space-separated integers in decreasing order").rstrip().split()))
-    alice = list(map(int, input("Please enter the Alice's scores: space-separated integers in ascending order").rstrip().split()))
+    alice = list(map(int, input("Please enter Alice's scores: space-separated integers in ascending order").rstrip().split()))
     result = climbing_leaderboard(scores, alice)
     print('\n'.join(map(str, result))+'\n')
